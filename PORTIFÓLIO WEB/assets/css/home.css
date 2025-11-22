@@ -1,0 +1,501 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Padding padrão para todas as seções (espaçamento vertical) */
+.section-padding {
+    padding: 80px 0;
+}
+
+/* Container centralizador de conteúdo para todas as seções */
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Títulos das seções */
+h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Parágrafos de descrição das seções */
+.content-container p {
+    font-size: 1.1em;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+}
+
+/* 2. BACKGROUNDS (ORDEM INVERTIDA)        */
+
+/* Cor Principal (Branco) */
+.hero-section,
+.skills-section,
+.contact-section {
+    background-color: white; 
+}
+/* Cor Secundária (Cinza Suave) */
+.about-section,
+.portfolio-section {
+    background-color: #f8f8f8;
+}
+
+/* 3. HEADER E NAVEGAÇÃO                   */
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    padding: 10px 15px;
+    margin: 0 5px;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #008E98;
+}
+
+
+/* 4. SEÇÃO HERO (INTRODUÇÃO)              */
+
+.hero-section {
+    padding: 100px 0;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+/* --- Conteúdo de Texto --- */
+.text-content {
+    flex: 1.5;
+    text-align: left;
+}
+
+.text-content h1 {
+    font-size: 3.8em;
+    line-height: 1.1;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.highlight-name {
+    color: #008E98;
+}
+
+.hero-description {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    text-align: left;
+    max-width: 550px;
+}
+
+.education-info {
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.education-info h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.education-info p {
+    font-size: 0.95em;
+    margin: 0;
+    text-align: left;
+    max-width: none;
+}
+
+/* Botão de Download CV */
+.btn-download-cv {
+    background-color: #008E98;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-download-cv:hover {
+    background-color: #007a83;
+    transform: translateY(-2px);
+}
+
+/* --- Conteúdo de Imagem --- */
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    position: relative; 
+    overflow: visible; 
+    box-shadow: none; 
+}
+
+.image-content::before {
+    content: none;
+}
+
+.image-content .profile-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0;
+    object-fit: contain;
+    border: none; /* Remove bordas que pudessem ter sido usadas para o círculo */
+}
+
+
+/* 5. SEÇÃO SKILLS (BARRAS DE PROGRESSO)   */
+
+.skills-content h2, 
+.skills-content p {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+}
+.skills-content h2 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.skills-container {
+    display: flex;
+    align-items: flex-start; 
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.image-area {
+    flex: 1; 
+    max-width: 400px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.image-area img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.bars-area {
+    flex: 2;
+    padding-top: 20px;
+}
+
+.skill-item {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.skill-info {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.skill-info img {
+    height: 28px;
+    width: auto;
+    margin-right: 12px;
+    object-fit: contain;
+}
+
+.progress-bar-bg {
+    background-color: #e0e0e0;
+    height: 14px;
+    border-radius: 7px;
+    overflow: hidden; 
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #008E98; 
+    border-radius: 7px;
+    transition: width 1s ease-out; 
+}
+
+/* 6. SEÇÃO CONTATO (FORMULÁRIO)           */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form .form-group {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    resize: vertical;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fcfcfc;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.btn-enviar {
+    width: 200px;
+    padding: 14px;
+    background-color: #008E98;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn-enviar:hover {
+    transform: scale(1.02);
+    background-color: #007a83;
+}
+
+/* 7. RESPONSIVIDADE GERAL                 */
+@media (max-width: 900px) {
+    /* --- Header --- */
+    .main-header {
+        padding: 15px 20px;
+    }
+    .main-nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .nav-link {
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+    
+    /* --- Hero Section --- */
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+    .text-content {
+        order: 2;
+    }
+    .text-content h1 {
+        font-size: 2.8em;
+    }
+    .hero-description, .education-info p {
+        text-align: center;
+    }
+    .education-info {
+        margin-top: 20px;
+    }
+    .image-content {
+        order: 1;
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    /* --- Seções Gerais --- */
+    h2 {
+        font-size: 2em;
+    }
+    .content-container p {
+        font-size: 1em;
+        margin-bottom: 30px;
+    }
+
+    /* --- Skills Section --- */
+    .skills-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .skills-content h2,
+    .skills-content p {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* --- Contact Form --- */
+    .contact-form input,
+    .contact-form textarea {
+        padding: 12px 15px;
+        font-size: 15px;
+    }
+    .btn-enviar {
+        width: 160px;
+        font-size: 1em;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-header {
+        padding: 10px 15px;
+    }
+    .logo {
+        font-size: 1.5em;
+    }
+    .main-nav ul {
+        gap: 5px;
+    }
+    .nav-link {
+        padding: 6px 8px;
+        font-size: 0.85em;
+    }
+
+    .hero-section {
+        padding: 60px 0;
+    }
+    .text-content h1 {
+        font-size: 2.2em;
+    }
+    .hero-description {
+        font-size: 0.95em;
+    }
+    .btn-download-cv {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+    .content-container p {
+        font-size: 0.9em;
+    }
+}
+
+
+/* 8. BOTÃO GITHUB (SEÇÃO TRABALHOS)       */
+
+
+.github-button-container {
+    text-align: center;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+.btn-github {
+    display: inline-block;
+    padding: 18px 45px; 
+    background-color: #008E98; 
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em; 
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 142, 152, 0.3); 
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.btn-github:hover {
+    background-color: #007a83;
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 15px rgba(0, 142, 152, 0.5);
+}
+
+.portfolio-section .content-container {
+    display: block; 
+}
+
+/* 9. RODAPÉ (FOOTER)                      */
+
+.main-footer {
+    background-color: #333; 
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content p {
+    margin: 0;
+}

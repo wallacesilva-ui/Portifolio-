@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Wallace</title>
+    
+    <link rel="stylesheet" href="/assets/css/home.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">Wallace</div>
+        <nav class="main-nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#hero" class="nav-link active"><span>Home</span></a></li>
+                <li class="nav__item"><a href="#sobre" class="nav-link"><span>Sobre</span></a></li>
+                <li class="nav__item"><a href="#skills" class="nav-link"><span>Skills</span></a></li>
+                <li class="nav__item"><a href="#trabalhos" class="nav-link"><span>Trabalhos</span></a></li>
+                <li class="nav__item"><a href="#contato" class="nav-link"><span>Contato</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-section section-padding">
+        <div class="hero-container content-container">
+            <div class="text-content">
+                <h1>
+                    Oi, <br>
+                    Eu sou <span class="highlight-name">Wallace</span> <br>
+                    Estudante de <br>
+                    Desenvolvimento.
+                </h1>
+                
+                <button class="btn-enviar">Contato</button>
+                
+                <div class="social-icons">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+            </div>
+
+            <div class="image-content">
+                <img src="/assets/img/foto-circulo.jpg" alt="Foto de Perfil de Wallace" class="profile-img">
+            </div>
+        </div>
+    </section>
+    
+    <section id="sobre" class="about-section section-padding">
+        <div class="content-container">
+            <h2>Sou desenvolvedor explorando boas práticas de código.</h2>
+            <p>Sou estudante de Desenvolvimento Web, com foco em aprender e aplicar boas práticas em front-end. Tenho conhecimento em HTML, CSS e JavaScript, e estou desenvolvendo projetos para aprimorar minhas habilidades técnicas e práticas.</p>
+        </div>
+        <div class="about-image-content">
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section section-padding">
+        <div class="skills-content content-container">
+            <h2>SKILLS</h2>
+            <p>Capacidade de transformar ideias em interfaces funcionais e agradáveis, utilizando HTML, CSS, JavaScript com atenção aos detalhes e à experiência do usuário.</p>
+            
+            <div class="skills-container">
+                <div class="image-area">
+                    <img src="/assets/img/foto-skills.jpg" alt="Ilustração de Homem-Aranha programando"> 
+                </div>
+
+                <div class="bars-area">
+                    <div class="skill-item">
+                        <div class="skill-info"> <img src="/assets/img/html-5.png" alt="HTML"> HTML </div>
+                        <div class="progress-bar-bg"><div class="progress-bar" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"> <img src="/assets/img/css-3.png" alt="CSS"> CSS </div>
+                        <div class="progress-bar-bg"><div class="progress-bar" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"> <img src="/assets/img/js.png" alt="JavaScript"> JavaScript </div>
+                        <div class="progress-bar-bg"><div class="progress-bar" style="width: 75%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"> <img src="/assets/img/figma.png" alt="Figma"> Figma </div>
+                        <div class="progress-bar-bg"><div class="progress-bar" style="width: 60%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"> <img src="/assets/img/bootstrap.png" alt="Bootstrap"> Bootstrap </div>
+                        <div class="progress-bar-bg"><div class="progress-bar" style="width: 50%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"> <img src="/assets/img/github.png" alt="GitHub"> GitHub </div>
+                        <div class="progress-bar-bg"><div class="progress-bar" style="width: 70%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="trabalhos" class="portfolio-section section-padding">
+    <div class="content-container">
+        <h2>Trabalhos Recentes</h2>
+        <p>Conheça os projetos onde apliquei minhas habilidades em desenvolvimento e design. Aqui você pode exibir cards ou uma grade de imagens dos seus projetos.</p>
+        
+        <div class="github-button-container">
+            <a href="#https://github.com/wallacesilva-ui?tab=repositories" target="_blank" class="btn-github">
+                Abrir GitHub
+            </a>
+        </div>
+        </div>
+    </section>
+
+    </section>
+
+    <section id="contato" class="contact-section section-padding">
+        <div class="content-container">
+            <h2>Entre em Contato</h2>
+            <p>Envie uma mensagem e vamos conversar sobre o seu próximo projeto!</p>
+            
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group"><input type="text" id="nome" name="nome" placeholder="Seu Nome" required></div>
+                <div class="form-group"><input type="email" id="email" name="email" placeholder="Seu Email" required></div>
+                <div class="form-group"><textarea id="mensagem" name="mensagem" rows="6" placeholder="Sua Mensagem" required></textarea></div>
+                <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="footer-content">
+        <p>&copy; 2025 Wallace | Todos os direitos reservados.</p>
+    </div>
+</footer>
+</body>
+</html>
